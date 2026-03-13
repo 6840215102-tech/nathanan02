@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>เว็บไซต์ของฉัน</title>
+
+<style>
+body{
+    background-color: #e6f2ff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1{
+    color: darkblue;
+}
+
+img{
+    width: 300px;
+}
+
+ul{
+    display: inline-block;
+    text-align: left;
+}
+</style>
+
+<script>
+
+function showWelcome(){
+    document.getElementById("welcome").innerHTML =
+    "ยินดีต้อนรับสู่เว็บไซต์ของฉัน";
+}
+
+function greetUser(){
+    var name = document.getElementById("username").value;
+    document.getElementById("result").innerHTML =
+    "สวัสดี " + name + " ยินดีต้อนรับ";
+}
+
+</script>
+
+</head>
+
+<body>
+
+<h1>เว็บไซต์แนะนำสถานที่ท่องเที่ยวในจังหวัดนครราชสีมา</h1>
+
+<img src="primo-piazza-khao-yai.jpg""อุทยานแห่งชาติทับลาน.jpg""น้ำตกเหวนรก.jpg>
+
+<p>
+เว็บไซต์นี้จัดทำขึ้นเพื่อแนะนำสถานที่ท่องเที่ยวที่น่าสนใจ
+</p>
+
+<h3>สถานที่ท่องเที่ยวแนะนำ</h3>
+<ul>
+   <li>Primo Piazza</li>
+   <li>อุทยานแห่งชาติทับลาน</li>
+   <li>น้ำตกเหวนรก</li>
+</ul>
+
+<p>
+<a href="https://www2.nakhonratchasima.go.th/travel_top" target="_blank">
+ไปยังเว็บไซต์แนะนำสถานที่ท่องเที่ยวเพิ่มเติม
+</a>
+</p>
+
+<hr>
+
+<button onclick="showWelcome()">ลองคลิกที่นี่ดูสิ</button>
+<p id="welcome"></p>
+
+<br>
+
+<input type="text" id="username" placeholder="กรอกชื่อของคุณ">
+<button onclick="greetUser()">ทักทาย</button>
+
+<p id="result"></p>
+
+</body>
+</html>
